@@ -1,7 +1,7 @@
 # chess-vision
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
+[![C++ Version](https://img.shields.io/badge/C%2B%2B-11%2B-blue.svg)](https://isocpp.org/)
 
 ## Table of Contents
 - [Description](#description)
@@ -13,28 +13,24 @@
 - [Contact](#contact)
 
 ## Description
-
+This C++ program uses OpenCV to detect faces in an image or a video feed. It utilizes a pre-trained Haar Cascade classifier to locate faces, draws rectangles around detected faces, and displays the count of faces found on the screen.
 
 ## Installation to run bot
-1. Clone this repository: `git clone https://github.com/ohmma0tokita/chess-vision.git`
-2. Navigate to the project directory: `cd discord-bot`
-3. Install dependencies: `pip install -r requirements.txt`
-4. API-KEY: "https://aistudio.google.com/app/apikey"
-5. BOT-TOKEN: "https://discord.com/developers/applications/1020409034479771659/oauth2"
+1. Install OpenCV by following the official OpenCV installation guide.
+2. Ensure the haarcascade_frontalface_default.xml file (Haar Cascade model) is downloaded and placed in the working directory
 
 ## Usage
-1. Invite the bot to your Discord server: "https://discordapp.com/oauth2/authorize?&client_id=1020409034479771659&scope=bot"
-2. Run the bot: `main.py`
-3. Use bot commands or tyoe "!" followed by your text to interact with the bot in your server.
+1. For detecting faces in an image:
+  Set path to the desired image file.
+  Run the program to display the image with faces highlighted.
+2. For real-time face detection using a webcam (commented out in the code):
+  Enable the VideoCapture section in main().
+  The program will detect faces in a video stream and display them in real-time.
 
 ## Features
-- Listens to the discussion awaiting for a trigger such as a specific word or a command
-- interacts with you using generative AI, GEMINI API
-- tells you to shut up sometimes
-
-## commands
-- `$test`: resends the command
-- `$bottles amount(optional) liquid(optional) `: sends "{amount} bottles of {liquid} on the wall!"
+- Face Detection: Detects multiple faces in an image or video feed.
+- Face Highlighting: Draws rectangles around detected faces.
+- Face Count Display: Shows the number of faces detected on the screen
 
 ## Licence
 This project is licensed under the MIT License
