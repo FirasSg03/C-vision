@@ -15,7 +15,7 @@
 ## Description
 This C++ program uses OpenCV to detect faces in an image or a video feed. It utilizes a pre-trained Haar Cascade classifier to locate faces, draws rectangles around detected faces, and displays the count of faces found on the screen.
 
-## Installation to run bot
+## Installation
 1. Install OpenCV by following the official OpenCV installation guide.
 2. Ensure the haarcascade_frontalface_default.xml file (Haar Cascade model) is downloaded and placed in the working directory
 
