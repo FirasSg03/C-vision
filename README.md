@@ -1,4 +1,4 @@
-# chess-vision
+# c-vision
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![C++ Version](https://img.shields.io/badge/C%2B%2B-11%2B-blue.svg)](https://isocpp.org/)
